@@ -1,0 +1,37 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* global styles end */
