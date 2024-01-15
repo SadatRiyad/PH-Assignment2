@@ -24,7 +24,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 
 body {
-    overflow: hidden;
     font-family: 'Mulish', sans-serif;
 }
 
@@ -56,6 +55,63 @@ body {
     border:1.5px solid #FF5400;
 }
 /* global styles end */
+
+/* navbar start */
+.navbar{
+    position:sticky;
+    background-color: #fffffff8;
+    box-shadow: 0px 0px 10px 0px #eee;
+    top: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    position: relative;
+    padding: 2% 0% 0%;
+    justify-content: space-around;
+    letter-spacing: 1px;
+    align-items: center;
+    z-index: 9999;
+}
+nav img{
+    width: 75%;
+}
+nav .fa{
+    display: none;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: -35px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 40px 12px 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #424247;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li a:hover{
+    color: #FF5400;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF5400;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* navbar end */
 
 /* header start */
 header {
@@ -136,6 +192,39 @@ header {
 
 /* media quary start */
 @media (max-width: 600px) {
+    .nav-links ul li{
+        overflow: hidden;
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        margin-top: 0px;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #000000c7;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul li a{
+        color: #000000c7;
+        font-weight: 700;
+    }
+    .nav-links ul{
+        padding: 25px;
+    }
+    .nav-links ul li::after{
+        color: #fff !important;
+    }
+
     header {
         width: 80%;
         padding: 70px 20px 50px;
