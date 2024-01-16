@@ -482,6 +482,73 @@ header {
 }
 /* banner3 end */
 
+/* deals1 start */
+.deals1, .deals2, .deals3{
+    border-radius: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../images/Group\ 39.png);
+    background-repeat: no-repeat;
+    margin: 50px auto 40px;
+    width: 80%;
+    padding: 120px 20px 60px!important;
+    text-align: left;
+    flex-direction: row-reverse;
+
+    & .banner5-col1{
+        border-radius: 16px;
+        border: 2px solid #FFF !important;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        flex-basis: 60% !important;
+        padding:25px;
+        border-radius: 8px;
+    }
+    & .banner5-col2{
+        flex-basis: 29%;
+        padding:25px;
+        border-radius: 8px;
+    }
+    & h5{
+        color: #FF5400;
+        font-family: Mulish;
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+}
+.banner5-text h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800 !important;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    font-weight: 600;
+    margin: 0px 0px 20px;
+}
+.banner5-text p{
+    text-align: center;
+    color: #424247;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+}
+/* deals1 end */
+/* deals2 start */
+.deals2{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../images/Group\ 40.png);
+    flex-direction: row;
+}
+/* deals2 end */
+/* deals3 start */
+.deals2{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../images/Group\ 40.png);
+}
+/* deals3 end */
+
+
 /* banner4 start */
 .banner1-content .banner1-col.b4{
     flex-basis: 46%;
